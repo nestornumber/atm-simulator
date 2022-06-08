@@ -1,0 +1,13 @@
+﻿  Main.cpp
+C:\Users\nesto\Desktop\ITCA\Ciclos\Primer Ciclo\DLP\Semana 14\Simulador de cajero automático\Main\Main.cpp(33,14): warning C4101: 'nombre': variable local sin referencia
+C:\Users\nesto\Desktop\ITCA\Ciclos\Primer Ciclo\DLP\Semana 14\Simulador de cajero automático\Main\Main.cpp(100,6): warning C4102: 'start': etiqueta sin referencia
+C:\Users\nesto\Desktop\ITCA\Ciclos\Primer Ciclo\DLP\Semana 14\Simulador de cajero automático\Main\Main.cpp(463,19): warning C4305: '=': truncamiento de 'double' a 'float'
+C:\Users\nesto\Desktop\ITCA\Ciclos\Primer Ciclo\DLP\Semana 14\Simulador de cajero automático\Main\Main.cpp(749,42): warning C4244: '=': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\nesto\Desktop\ITCA\Ciclos\Primer Ciclo\DLP\Semana 14\Simulador de cajero automático\Main\Main.cpp(407,7): warning C4102: 'caso4': etiqueta sin referencia
+C:\Users\nesto\Desktop\ITCA\Ciclos\Primer Ciclo\DLP\Semana 14\Simulador de cajero automático\Main\Main.cpp(684,18): warning C4102: 'opcionremesascin': etiqueta sin referencia
+C:\Users\nesto\Desktop\ITCA\Ciclos\Primer Ciclo\DLP\Semana 14\Simulador de cajero automático\Main\Main.cpp(891,28): warning C4102: 'seleccionpaisenviarremesa': etiqueta sin referencia
+  Generando código
+  Previous IPDB not found, fall back to full compilation.
+  All 47 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Generación de código finalizada
+  Main.vcxproj -> C:\Users\nesto\Desktop\ITCA\Ciclos\Primer Ciclo\DLP\Semana 14\Simulador de cajero automático\x64\Release\Main.exe
