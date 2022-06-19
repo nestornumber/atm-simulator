@@ -1,27 +1,29 @@
 // LLAMADO DE LIBRERIAS
 #include <iostream>
-#include <conio.h>
+#include <conio.h> // esta para que se pueda usar getch_, getch sirve para mantener la pantalla hasta que el usuario pasa un solo valor para salir de la pantalla de la consola. Link: https://www.javatpoint.com/what-is-getch-in-c
 #include <ctime>
 #include <vector>
-#include "gotoxy.h"				//hace referncia al archivo del mismo nombre que esta en el solution
+#include "gotoxy.h"				//hace referncia al archivo del mismo nombre que esta en la carpeta de este archivo .cpp
+// "gotoxy.h" esta entre comillas porque la ubicacion del archivo de la libreria esta en el mismo lugar que este archivo main.cpp
 #pragma warning(disable : 4996)// me tiraba un error por lo de la fecha me decia CRL_SECURE_ y con esto se quita T-T
 
-// Sstos son los define con el codigo ascci para poder mover con las flechas del teclado
+// #DEFINE PARA DETECTAR LA TECLA DEL TECLADO
+// Estos son los define con el codigo ascci para poder mover con las flechas del teclado
 #define UP 80
 #define down 72
 #define ENTER 13
 
 // DECLARACION DE FUNCIONES
 void menu_y_opciones(int numerocuenta, float fondos, float nuevofondo, const char *nombre);
-// nombre es una constante porque una vez escrito el numero de cuenta, el nombre no cambia
+// nombre es una constante porque una vez escrito el numero de cuenta, el nombre no cambia a menos que se reinicie el programa
 
 int introducir_cuenta();
 void presioneunatecla();
 
 using namespace std;
 
-// LA FUNCION PRINCIPAL
-// Consta solamente de la declaracion de variables basicas y la asignacion de las distintas cuentas de prueba del programa
+// LA FUNCION INT MAIN
+// Consta solamente de la declaracion de variables basicas y la asignacion de las distintas cuentas del programa
 int main()
 {
 	// DECLARACION DE VARIABLES
@@ -44,7 +46,7 @@ int main()
 			// La variable numero de cuenta tendra el valor que retorne la funcion de introducir_cuenta() usando la variable cuenta
 
 			// Existen 6 numeros de cuenta distintos en donde cada uno tiene una cantidad distinta en la variable fondos, un valor distinto en la variable caracter.
-			// Esto es para cambiar en cada numero de cuenta, el nombre de cada persona y cuanto dinero tiene cada una
+			// Esto es para que en cada numero de cuenta, se cambie el nombre de cada persona y cuanto dinero tiene cada una
 
 			if (numerocuenta == 123456)
 			{
@@ -111,11 +113,9 @@ start:
 	//--------Bienvenida del programa y verificacion de cuenta---------
 
 	cout << "\n\t\t-------------------------------------------------------------------------" << endl;
-	cout << "\n\t\t		Bienvenido al cajero de BANCO NACIONAL\n"
-		 << endl;
+	cout << "\n\t\t		Bienvenido al cajero de BANCO NACIONAL\n" << endl;
 
-	cout << "\n\t\t		Por favor introduzca su n\xA3mero de cuenta:\n"
-		 << endl;
+	cout << "\n\t\t		Por favor introduzca su n\xA3mero de cuenta:\n" << endl;
 
 	cout << "\t\t---------------------------------------------------------------------------" << endl;
 	cout << "\t\t	Introduzca su n\xA3mero de cuenta: ";
@@ -129,7 +129,7 @@ start:
 
 
 // FUNCION PRINCIPAL
-// Funcion principal que engloba toda las disintas variables y opciones y subopciones de cada menu
+// Funcion principal que engloba toda las distintas variables, opciones y subopciones de cada menu
 void menu_y_opciones(int numerocuenta, float fondos, float nuevofondo, const char *nombre)
 {
 	// DECLARACION DE VARIABLES DE LOS MENUS
